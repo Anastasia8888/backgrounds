@@ -2,7 +2,7 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://anastasia8888.github.io/interactive_backgrounds/",
+  "homepage": "https://anastasia8888.github.io/backgrounds/",
   "dependencies": {
     "animated": "^0.2.2",
     "antd": "^3.18.2",
