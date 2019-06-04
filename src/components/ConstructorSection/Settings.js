@@ -152,14 +152,7 @@ export default class Settings extends Component {
     })
   }
   render() {
-    const {
-      contrast,
-      saturation,
-      brightness,
-      visible,
-      width,
-      height
-    } = this.state
+    const { contrast, saturation, brightness, visible } = this.state
 
     return (
       <Root>
