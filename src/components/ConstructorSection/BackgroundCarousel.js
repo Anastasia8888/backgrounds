@@ -32,7 +32,10 @@ export default class BackgroundCarousel extends Component {
     return (
       <Root>
         <Header id="constructor">Конструктор</Header>
-        <Settings selectedItem={this.state.selectedItem} />
+        <Settings
+          selectedItem={this.state.selectedItem}
+          generateOutput={this.props.generateOutput}
+        />
         <ConstructorLayout getSelectedItem={this.getSelectedItem} />
       </Root>
     )

@@ -20,7 +20,7 @@ const BackgroundWrapper = styled.div`
   z-index: 0;
 `
 
-export default function Main() {
+export default function Main({ generateOutput }) {
   return (
     <Root>
       <Header />
@@ -29,7 +29,7 @@ export default function Main() {
           <Background />
         </Surface>
       </BackgroundWrapper>
-      <BackgroundCarousel />
+      <BackgroundCarousel generateOutput={generateOutput} />
     </Root>
   )
 }

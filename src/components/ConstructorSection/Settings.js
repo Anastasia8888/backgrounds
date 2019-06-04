@@ -123,9 +123,21 @@ export default class Settings extends Component {
   }
 
   generateBackground = () => {
+    const { contrast, saturation, brightness, width, height } = this.state
+    const { selectedItem, generateOutput } = this.props
     this.setState({
       visible: true
     })
+    setTimeout(() => {
+      generateOutput(
+        contrast,
+        saturation,
+        brightness,
+        selectedItem,
+        width,
+        height
+      )
+    }, 2500)
   }
 
   onOk = () => {
@@ -209,15 +221,6 @@ export default class Settings extends Component {
           <GenerateButton type="primary" onClick={this.generateBackground}>
             Сгенерировать фон
           </GenerateButton>
-
-          {/* <Output
-            width={width}
-            height={height}
-            contrast={contrast}
-            saturation={saturation}
-            brightness={brightness}
-            selectedItem={this.props.selectedItem}
-          /> */}
         </SettingsBlock>
         <GenerateModal
           visible={visible}
