@@ -23,9 +23,7 @@ export default class GenerateModal extends Component {
         <p>Копируйте код ниже и добавьте на ваш сайт</p>
         <CodeArea>
           <code>
-            {
-              '<iframe src="https://anastasia8888.github.io/interactive_backgrounds/output" />'
-            }
+            {'<iframe src="https://backgrounds.herokuapp.com//output" />'}
           </code>
         </CodeArea>
 
