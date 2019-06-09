@@ -4,7 +4,6 @@ import { darken } from 'polished'
 import { ScrollTo } from 'react-scroll-to'
 
 const Title = styled.div`
-  margin: 200px auto 80px auto;
   color: #fff;
   font-size: 60px;
   max-width: 800px;
@@ -13,13 +12,18 @@ const Title = styled.div`
 const Root = styled.div`
   position: relative;
   z-index: 1;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 `
 
 const Button = styled.button`
+  margin-top: 30px;
   outline: none;
   width: 300px;
   height: 50px;
-  margin: 0 auto;
   display: block;
   font-size: 25px;
   font-weight: bold;

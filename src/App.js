@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom'
 import 'antd/dist/antd.css'
 import Main from './components/Main'
 import Output from './components/Output'
-import Example1 from './components/ConstructorSection/BackgroundExamples/Example1'
+import GradientsLoop from './components/ConstructorSection/BackgroundExamples/GradientsLoop'
 
 const renderMergedProps = (component, ...rest) => {
   const finalProps = Object.assign({}, ...rest)
@@ -23,10 +23,10 @@ const PropsRoute = ({ component, ...rest }) => {
 }
 export default class App extends Component {
   state = {
-    contrast: 1,
-    saturation: 1,
-    brightness: 1,
-    selectedItem: <Example1 />,
+    contrast: 3,
+    saturation: 5,
+    brightness: 5,
+    selectedItem: <GradientsLoop />,
     width: '100%',
     height: '100vh'
   }

@@ -12,7 +12,7 @@ const CodeArea = styled.div`
 
 export default class GenerateModal extends Component {
   render() {
-    const { visible, onOk, onCancel } = this.props
+    const { visible, onOk, onCancel, width, height } = this.props
     return (
       <Modal
         title="Фон создан"
@@ -23,7 +23,7 @@ export default class GenerateModal extends Component {
         <p>Копируйте код ниже и добавьте на ваш сайт</p>
         <CodeArea>
           <code>
-            {'<iframe src="https://backgrounds.herokuapp.com//output" />'}
+            {`<iframe width="${width}" height="${height}" src="https://backgrounds.herokuapp.com/output" />`}
           </code>
         </CodeArea>
 

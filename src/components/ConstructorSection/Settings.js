@@ -32,12 +32,10 @@ const GenerateButton = styled(Button)`
   display: block;
   margin: 20px auto 0 auto;
 `
-const OutputBlock = styled.div`
-  display: none;
-`
 
 const Root = styled.div`
-  margin: 50px 180px;
+  margin: 50px auto;
+  max-width: 1300px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -152,7 +150,14 @@ export default class Settings extends Component {
     })
   }
   render() {
-    const { contrast, saturation, brightness, visible } = this.state
+    const {
+      contrast,
+      saturation,
+      brightness,
+      visible,
+      width,
+      height
+    } = this.state
 
     return (
       <Root>
@@ -219,6 +224,8 @@ export default class Settings extends Component {
           visible={visible}
           onOk={this.onOk}
           onCancel={this.onCancel}
+          width={width}
+          height={height}
         />
       </Root>
     )
